@@ -488,12 +488,12 @@
    ============================================================ */
 /* 訂單後端：Supabase Edge Functions（舊的 Google Apps Script 原始碼保留在 gas/Code.gs 供參考，網站已不再呼叫） */
 const ORDER_API = {
-  create: 'https://wbccrjibekqsygappslb.supabase.co/functions/v1/super-worker', // create-order
-  track:  'https://wbccrjibekqsygappslb.supabase.co/functions/v1/get-order'
+  create: 'https://prnopkpbzgideuenzfmx.supabase.co/functions/v1/create-order',
+  track:  'https://prnopkpbzgideuenzfmx.supabase.co/functions/v1/get-order'
 };
 /* Supabase Dashboard → Project Settings → API 的 anon（public）key。這是公開金鑰，可以放在前端；
    ⚠️ 絕對不可貼 service_role / secret key。 */
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndiY2NyamliZWtxc3lnYXBwc2xiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI2Mzg1MDYsImV4cCI6MjEwODIxNDUwNn0.uP36F1MvDC-fSAO4OpR6aFD9SZWuD02nCLwOacFO1I8';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBybm9wa3BiemdpZGV1ZW56Zm14Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUwNDU5NzksImV4cCI6MjExMDYyMTk3OX0.ZTYOLIv6Yb7UYKL-yu8xgOSoSqFHMAUxLb--v929GZ4';
 
 const IMG = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=75`;
 
